@@ -1,182 +1,346 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>SB Admin - Start Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>SB Admin - Start Bootstrap Template</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <!-- Plugin CSS -->
-    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <!-- Plugin CSS -->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/sb-admin.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/sb-admin.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body class="fixed-nav sticky-footer bg-dark" id="page-top">
-      
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-      <a class="navbar-brand" href="#">Compliance Assessment Test (CAT)</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="#">Compliance Assessment Test (CAT)</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-            <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Settings">
-                <a class="nav-link" href="#">
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Settings">
+          <a class="nav-link" href="#">
                   <i class="fa fa-fw fa-wrench"></i>
                   <span class="nav-link-text">
                     Settings</span>
                 </a>
-                
-              </li>
-          <li class="nav-item " data-toggle="tooltip" data-placement="right" title="Dashboard">
-            <a class="nav-link" href="#">
-              <i class="fa fa-fw fa-dashboard"></i>
-              <span class="nav-link-text">
-                Dashboard</span>
-            </a>
-          </li>
-          <li class="nav-item " data-toggle="tooltip" data-placement="right" title="Charts">
-            <a class="nav-link" href="#">
-              <i class="fa fa-fw fa-area-chart"></i>
-              <span class="nav-link-text">
-                Charts</span>
-            </a>
-          </li>
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-            <a class="nav-link" href="#">
-              <i class="fa fa-fw fa-table"></i>
-              <span class="nav-link-text">
-                Tables</span>
-            </a>
-          </li>
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
-            <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
-              <i class="fa fa-fw fa-wrench"></i>
-              <span class="nav-link-text">
-                Components</span>
-            </a>
-            <ul class="sidenav-second-level collapse" id="collapseComponents">
-              <li>
-                <a href="static-nav.html">Static Navigation</a>
-              </li>
-              <li>
-                <a href="#">Custom Card Examples</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-            <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
-              <i class="fa fa-fw fa-file"></i>
-              <span class="nav-link-text">
-                Example Pages</span>
-            </a>
-            <ul class="sidenav-second-level collapse" id="collapseExamplePages">
-              <li>
-                <a href="login.html">Login Page</a>
-              </li>
-              <li>
-                <a href="register.html">Registration Page</a>
-              </li>
-              <li>
-                <a href="forgot-password.html">Forgot Password Page</a>
-              </li>
-              <li>
-                <a href="blank.html">Blank Page</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
-            <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
-              <i class="fa fa-fw fa-sitemap"></i>
-              <span class="nav-link-text">
-                Menu Levels</span>
-            </a>
-            <ul class="sidenav-second-level collapse" id="collapseMulti">
-              <li>
-                <a href="#">Second Level Item</a>
-              </li>
-              <li>
-                <a href="#">Second Level Item</a>
-              </li>
-              <li>
-                <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Third Level</a>
-                <ul class="sidenav-third-level collapse" id="collapseMulti2">
-                  <li>
-                    <a href="#">Third Level Item</a>
-                  </li>
-                  <li>
-                    <a href="#">Third Level Item</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
-            <a class="nav-link" href="#">
-              <i class="fa fa-fw fa-link"></i>
-              <span class="nav-link-text">
-                Link</span>
-            </a>
-          </li>
-        </ul>
-        <ul class="navbar-nav sidenav-toggler">
-            <li class="nav-item">
-              <a class="nav-link text-center" id="sidenavToggler">
+
+        </li>
+
+      </ul>
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
                 <i class="fa fa-fw fa-angle-left"></i>
               </a>
-            </li>
-          </ul>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <div class="content-wrapper">
+
+   
+
+    <div class="container-fluid">
+
+      <!-- Breadcrumbs -->
+      <ol class="breadcrumb">
+          <form class="form-horizontal">
+              <fieldset>
+      
+                <!-- Form Name -->
+                <h3><u>DDS Settings</u></h3>
+                <br>
+      
+               
+
+                <!-- Select Basic -->
+                <div class="form-group row">
+                  <label class="col-md-3 control-label" for="selectbasic">DDS</label>
+
+                  <select class="custom-select">
+                    
+                    <option value="1">RTI</option>
+                    <option value="2" disabled>OpenDDS</option>
+                    <option value="3" disabled>PRISM Tech</option>
+                  </select>
+
+                 
+                  </div>
+
+
+                
+      
+                <!-- Text input-->
+                <div class="form-group row">
+                  <label class="col-md-3 control-label" for="ddsHome">DDS Home</label>
+                  <div class="col-md-4">
+                    <input id="ddsHome" name="ddsHome" placeholder="Point to DDS Home Directory" class="form-control input-md" type="text" value="/opt/rti_connext_dds-5.2.3">
+      
+                  </div>
+                </div>
+      
+              </fieldset>
+            </form>
        
-      </div>
-    </nav>
-
-    <div class="content-wrapper">
-
-      <div class="container-fluid">
-
-        <!-- Breadcrumbs -->
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="#">Dashboard</a>
-          </li>
-          <li class="breadcrumb-item active">My Dashboard</li>
-        </ol>
-        </div>
-     </div>
+      </ol>
 
 
 
-    <!-- Bootstrap core JavaScript -->
-    <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
-    <script src="vendor/jquery/jquery.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    
-    <script src="vendor/datatables/jquery.dataTables.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+      <ol class="breadcrumb">
+          <form class="form-horizontal">
+              <fieldset>
+              
+              <!-- Form Name -->
+              <h3><u>Test Settings</u></h3>
+              <br>
+              
+              <div class="form-group row">
+                  <label class="col-md-3 control-label" for="checkboxes">Generate report</label>
+                  <div class="col-md-4 ">
+                    <label class="checkbox-inline" for="checkboxes-0">
+                      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="">
+                      PDF
+                    </label>
+                  </div>
+                  </div>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/sb-admin.js"></script>
+                
 
-  </body>
+              <!-- Multiple Checkboxes (inline) -->
+              <div class="form-group row">
+              
+                <label class="col-md-3 control-label" for="checkboxes">Test Types</label>
+                <div class="col-md-4">
+                  <label class="checkbox-inline" for="checkboxes-0">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-00" value="">
+                    Functionality
+                  </label>
+                  <label class="checkbox-inline" for="checkboxes-1">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-01" value="">
+                    Cyber Security
+                  </label>
+                </div>
+              </div>
+              
+              <!-- Multiple Checkboxes -->
+              <div class="form-group row">
+                <label class="col-md-3 control-label" for="checkboxes">Test Modules</label>
+                <div class="col-md-8">
+                <div class="checkbox disabled">
+                  <label for="checkboxes-0">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-120" value="" disabled>
+                    Acoustic Gunshot Detection System
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-1">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-1" value="">
+                    Alarms
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-2">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-232" value="" disabled>
+                    Arbitration
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-3">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-3" value="" disabled>
+                    Data Logging
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-4">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-4" value="" disabled>
+                    Engine
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-5">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-5" value="" disabled>
+                    Environmental Control
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-6">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-6" value="" disabled>
+                    Laser Range Finder
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-7">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-7" value="" disabled>
+                    Meteorological Sensor
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-8">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-8" value="" disabled>
+                    Navigation Reference
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-9">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-9" value="" disabled>
+                    Power
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-10">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-10" value="" disabled>
+                    Routes
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-11">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-11" value="" disabled>
+                    Sensor Data Fusion
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-12">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-12" value="" disabled>
+                    Tactical Areas
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-13">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-13" value="" disabled>
+                    Transmission
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-14">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-14" value="" disabled>
+                    Usage And Condition Monitoring
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-15">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-15" value="" disabled>
+                    Vehicle Configuration Functionality
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-16">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-16" value="" disabled>
+                    Automatic Weapon
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-17">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-17" value="" disabled>
+                    Driving Controls
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-18">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-18" value="" disabled>
+                    Inventory
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-19">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-19" value="" disabled>
+                    Laser Warning System
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-20">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-20" value="" disabled>
+                    Mount
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-21">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-21" value="" disabled>
+                    Platform Hardware
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-22">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-22" value="" disabled>
+                    Single Shot Grenade Launcher
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-23">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-23" value="" disabled>
+                    Tactical Effector
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-24">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-24" value="" disabled>
+                    Tactical Sensor
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label for="checkboxes-25">
+                    <input type="checkbox" name="checkboxes" id="checkboxes-25" value="" disabled>
+                    Targets And Threats
+                  </label>
+                </div>
+                </div>
+              </div>
+              
+              <!-- Button -->
+              <div class="form-group row">
+                <label class="col-md-5 control-label" for="singlebutton"></label>
+                <div class="col-md-5">
+                  <!-- <a class="btn btn-primary" id="singlebutton" >Begin Test</a> -->
+                  <a class="btn btn-primary" href="#" role="button">Begin Test</a>
+                </div>
+              </div>
+              
+              </fieldset>
+              </form>
+              
+       
+      </ol>
+    </div>
+  </div>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
+  <script src="vendor/jquery/jquery.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+  <script src="vendor/popper/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <script src="vendor/datatables/jquery.dataTables.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/sb-admin.js"></script>
+
+</body>
 
 </html>

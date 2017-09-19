@@ -3,6 +3,27 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-sb-admin/blob/master/LICENSE)
  */
+
+ label{
+   padding: 10px 10px 10px 10px;
+ }
+
+
+
+option {
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+}
+
+.custom-select {
+  padding: 10px 10px 10px 10px;
+}
+
+select {
+  margin: 15px;
+}
+
+
 html {
   position: relative;
   min-height: 100%; }
@@ -18,6 +39,7 @@ body.fixed-nav {
 .content-wrapper {
   min-height: calc(100vh - 56px);
   padding-top: 1rem; }
+  
 
 .scroll-to-top {
   position: fixed;
@@ -334,6 +356,8 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
 .card-register {
   max-width: 40rem; }
 
+
+
 footer.sticky-footer {
   position: absolute;
   right: 0;
@@ -349,3 +373,5 @@ footer.sticky-footer {
 @media (min-width: 992px) {
   body.sidenav-toggled footer.sticky-footer {
     width: calc(100% - 55px); } }
+
+
