@@ -1,7 +1,7 @@
 const argv = require('minimist')(process.argv);
 
 exports.getEnvName = () => {
-  return argv.env || 'development';
+  return argv.env || 'production';
 };
 
 exports.beepSound = () => {
