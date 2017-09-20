@@ -2,7 +2,173 @@
 
 $(function () {
 
-    $('#testCollapse').hide();
+    var donutData =  [2478,5267,734,784,433];
+
+    //code for charts
+    function drawDonut(){
+        
+        //var donutEl = document.getElementById("donut").getContext("2d");
+        
+        new Chart($("#donut"), {
+            type: 'doughnut',
+            data: {
+                labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+                datasets: [
+                  {
+                    label: "Population (millions)",
+                    backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+                    data: donutData
+                  }
+                ]
+              },
+              options: {
+                title: {
+                  display: false
+                },
+                legend:{
+                    display:false
+                }
+              }
+        });
+        new Chart(document.getElementById("bar-chart1"), {
+            type: 'bar',
+            data: {
+              labels: ["Africa", "Asia", "Europe", "Latin America"],
+              datasets: [
+                {
+                  label: "Population (millions)",
+                  backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9"],
+                  data: [4,6,5,1]
+                }
+              ]
+            },
+            options: {
+              legend: { display: false },
+              title: {
+                display: false,
+                
+              },
+              scales: {
+                xAxes: [ { display: false  } ], 
+                yAxes: [{
+                    ticks: {
+                        min: 0
+                    }
+                }]
+            }
+           
+            }
+        });
+        new Chart(document.getElementById("bar-chart2"), {
+            type: 'bar',
+            data: {
+              labels: ["Africa", "Asia", "Europe", "Latin America"],
+              datasets: [
+                {
+                  label: "Population (millions)",
+                  backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9"],
+                  data: [4,6,5,1]
+                }
+              ]
+            },
+            options: {
+              legend: { display: false },
+              title: {
+                display: false,
+                
+              },
+              scales: {
+                xAxes: [ { display: false  } ], 
+                yAxes: [{
+                    ticks: {
+                        min: 0
+                    }
+                }]
+            }
+           
+            }
+        });
+        new Chart(document.getElementById("bar-chart3"), {
+            type: 'bar',
+            data: {
+              labels: ["Africa", "Asia", "Europe", "Latin America"],
+              datasets: [
+                {
+                  label: "Population (millions)",
+                  backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9"],
+                  data: [4,6,5,1]
+                }
+              ]
+            },
+            options: {
+              legend: { display: false },
+              title: {
+                display: false,
+                
+              },
+              scales: {
+                xAxes: [ { display: false  } ], 
+                yAxes: [{
+                    ticks: {
+                        min: 0
+                    }
+                }]
+            }
+           
+            }
+        });
+        // new Chart($("#bar-chart"), {
+        //     type: 'bar',
+        //     data: {
+        //       labels: ["Sucessful", "Failed", "Monitoring"],
+        //       datasets: [
+        //         {
+        //           label: "Test results",
+        //           backgroundColor: ["#8e5ea2","#3cba9f","#e8c3b9"],
+        //           data: [2,2,5]
+        //         }
+        //       ]
+        //     },
+        //     options: {
+        //       legend: { display: false },
+        //       title: {
+        //         display:false, 
+        //       },
+        //       scales : {
+        //         xAxes: [ { display: false  } ], 
+        //         yAxes: [ { display: true  } ]
+                
+        //       }
+
+        //     }
+        // });
+        // var data = {
+        //     datasets: [{
+        //         data: [10, 20, 30]
+        //     }],
+        
+        //     // These labels appear in the legend and in the tooltips when hovering different arcs
+        //     labels: [
+        //         'Red',
+        //         'Yellow',
+        //         'Blue'
+        //     ]
+        // };
+        // var options = {
+        //     options: {
+               
+        //       }
+        // }
+        // var myDoughnutChart = new Chart(donutEl, {
+        //     type: 'doughnut',
+        //     data: data,
+        //     options: options
+        // });
+        }
+    drawDonut();
+
+
+    $('#alarmTestPage').hide();
 
 
 
@@ -16,7 +182,7 @@ $(function () {
     function settingsClicked() {
         $('#settingsMenu').addClass("active");
         $('#alarmNavElement').removeClass("active");
-        $('#testCollapse').hide();
+        $('#alarmTestPage').hide();
         $('#settingsMain').show();
     }
 
@@ -31,7 +197,7 @@ $(function () {
     }
 
     function showTests() {
-        $('#testCollapse').show();
+        $('#alarmTestPage').show();
     }
 
     function hideSettings() {

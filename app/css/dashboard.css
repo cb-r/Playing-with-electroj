@@ -2,6 +2,9 @@
  * Base structure
  */
 
+ #charts{
+   display: flex;
+ }
 
 
  .createdSideNavElement{
